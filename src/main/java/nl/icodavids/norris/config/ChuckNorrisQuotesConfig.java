@@ -1,11 +1,11 @@
-package nl.icodavids.norris;
+package nl.icodavids.norris.config;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-public class BeanProvider {
+@Configuration
+public class ChuckNorrisQuotesConfig {
 
     @Bean
     public ChuckNorrisQuotes getChuckNorrisQuotes() {
